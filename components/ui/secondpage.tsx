@@ -52,11 +52,7 @@ export default function SecondPage() {
             </p>
 
             <p className="text-[16px] leading-tight mb-5 text-gray-800">
-              This is an area where poverty persists: many cannot afford daily
-              needs and sending children to school is a struggle. With help from
-              friends and family, the foundation has empowered many people —
-              improving livelihoods, supporting education, and providing essential
-              assistance to families in need.
+            Many families struggle with daily needs and education. With support, we provide aid, improve livelihoods, and support schooling.
             </p>
 
             <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold px-6 py-3 rounded-md transition tracking-widest mx-auto">
