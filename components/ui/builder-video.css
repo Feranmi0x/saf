@@ -1,0 +1,17 @@
+.progress-circle {
+  stroke-dasharray: 465; /* Circumference = 2πr (approx 100% circle) */
+  stroke-dashoffset: 465;
+  animation: progressLoop 3s ease-in-out infinite;
+}
+
+@keyframes progressLoop {
+  0% {
+    stroke-dashoffset: 465; /* Empty circle */
+  }
+  50% {
+    stroke-dashoffset: 0; /* Full circle */
+  }
+  100% {
+    stroke-dashoffset: 465; /* Back to empty */
+  }
+}
