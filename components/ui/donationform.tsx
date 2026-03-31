@@ -77,10 +77,10 @@ const handleSubmit = async () => {
         <div className="mb-4 p-4 bg-gray-100 rounded flex justify-between items-center">
           <div className="flex items-center gap-2">
             <p className="text-sm text-gray-600 font-medium">Amount to Donate:</p>
-            <p className="font-semibold text-lg">{displayAmount()}</p>
+            <p className="font-normal text-lg">{displayAmount()}</p>
           </div>
           <button
-            className="flex items-center underline gap-1 text-blue-600 font-normal hover:underline text-[12px]"
+            className="flex items-center underline gap-1 text-blue-600 font-bold hover:underline text-[12px]"
             onClick={onBack}
           >
             EDIT
@@ -91,11 +91,11 @@ const handleSubmit = async () => {
         <div className="mb-4">
           <p className="text-[12px] text-gray-600 mb-2 font-medium text-left">EXPRESS PAYMENT METHOD</p>
           <div
-            className="w-full bg-black/85 text-white py-3 rounded font-normal flex items-center justify-center gap-2 hover:bg-black/75 transition"
+            className="w-full bg-black/85 text-white py-3 rounded font-bold flex items-center justify-center gap-2 hover:bg-black/75 transition"
           >
           <PaystackPayment amount={5000} email="customer@example.com" /><FiArrowRight />
           </div>
-          <p className="text-sm text-gray-800 mt-2 text-left font-bold">
+          <p className="text-sm text-gray-800 mt-2 text-left font-normal">
             or enter your details manually below
           </p>
         </div>
@@ -108,7 +108,7 @@ const handleSubmit = async () => {
     <label className="mb-1 text-[12px] font-medium text-gray-600 text-left">FIRST NAME</label>
     <input
       type="text"
-      className="px-4 py-2 font-bold text-[17px] rounded text-gray-600 border border-gray-300 focus:outline-none focus:border-blue-500 w-full"
+      className="px-4 py-2 font-normal text-[17px] rounded text-gray-600 border border-gray-300 focus:outline-none focus:border-blue-500 w-full"
       value={firstName}
       onChange={(e) => setFirstName(e.target.value)}
     />
@@ -118,7 +118,7 @@ const handleSubmit = async () => {
     <label className="mb-1 text-[12px] font-medium text-gray-600 text-left">LAST NAME</label>
     <input
       type="text"
-      className="px-4 py-2 font-bold text-[17px] text-gray-600 rounded border border-gray-300 focus:outline-none focus:border-blue-500 w-full"
+      className="px-4 py-2 font-normal text-[17px] text-gray-600 rounded border border-gray-300 focus:outline-none focus:border-blue-500 w-full"
       value={lastName}
       onChange={(e) => setLastName(e.target.value)}
     />
@@ -129,7 +129,7 @@ const handleSubmit = async () => {
             <label className="mb-1 text-[12px] font-medium text-gray-600 text-left">EMAIL</label>
             <input
               type="email"
-              className="px-4 py-2 font-bold text-[17px] text-gray-600 rounded border border-gray-300 focus:outline-none focus:border-blue-500"
+              className="px-4 py-2 font-normal text-[17px] text-gray-600 rounded border border-gray-300 focus:outline-none focus:border-blue-500"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -140,7 +140,7 @@ const handleSubmit = async () => {
             <label className="mb-1 text-[12px] font-medium text-gray-600 text-left">PHONE NUMBER (OPTIONAL)</label>
             <input
               type="number"
-              className="px-4 py-2 rounded font-bold text-[17px] text-gray-600 border border-gray-300 focus:outline-none focus:border-blue-500"
+              className="px-4 py-2 rounded font-normal text-[17px] text-gray-600 border border-gray-300 focus:outline-none focus:border-blue-500"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
@@ -149,7 +149,7 @@ const handleSubmit = async () => {
 
         {/* Contact Preference */}
         <div className="flex gap-3 items-center mb-4">
-          <label className="flex items-center gap-2 font-bold">
+          <label className="flex items-center gap-2 font-normal">
             <input
               type="checkbox"
               checked={contactPreference.email}
@@ -160,7 +160,7 @@ const handleSubmit = async () => {
             />
             Email
           </label>
-          <label className="flex items-center gap-2 font-bold">
+          <label className="flex items-center gap-2 font-normal">
             <input
               type="checkbox"
               checked={contactPreference.text}
@@ -174,7 +174,7 @@ const handleSubmit = async () => {
         </div>
 
         {/* Consent Description */}
-        <p className="text-xs text-gray-900 mb-4 font-bold leading-tight">
+        <p className="text-xs text-gray-900 mb-4 font-normal leading-tight">
           By clicking Next, you’re submitting your information to Sam Anisulowo Foundation. If you
           have opted to receive text messages, you agree to receive messages such as promotions,
           offers, alerts, and donation requests. Consent is not a condition of purchase.
@@ -182,14 +182,14 @@ const handleSubmit = async () => {
 
         {/* Submit Button */}
         <button
-          className="w-full bg-blue-600 text-white py-3 rounded font-normal hover:bg-blue-500 transition mb-2"
+          className="w-full bg-blue-600 text-white py-3 rounded font-bold hover:bg-blue-500 transition mb-2"
           onClick={handleSubmit}
         >
           NEXT
         </button>
 
         {/* Secure Payment Notice */}
-<div className="flex justify-center text-gray-800 font-bold text-xs mt-2 w-full">
+<div className="flex justify-center text-gray-800 font-normal text-xs mt-2 w-full">
   <p className="leading-tight">
     <span className="flex items-center gap-1">
       <FiLock className="text-gray-700" />

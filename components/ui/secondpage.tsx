@@ -87,11 +87,7 @@ export default function SecondPage() {
           </p>
 
           <p className="text-base leading-relaxed mb-5 font-normal">
-            This is an area where poverty persists: many cannot afford daily
-            needs and sending children to school is a struggle. With help from
-            friends and family, the foundation has empowered many people —
-            improving livelihoods, supporting education, and providing essential
-            assistance to families in need.
+          Many families face poverty and education challenges. Through support, we provide essential aid, improve livelihoods, and empower communities.
           </p>
           <Link href="/articles/how-we-help-communities">
             <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold px-6 py-3 rounded-md transition tracking-widest">
