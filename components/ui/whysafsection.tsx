@@ -24,9 +24,9 @@ export default function WhySafSection() {
   };
 
   return (
-    <div className={`w-full min-h-screen bg-white flex flex-col items-center justify-center px-6 py-10`}>
+    <div className={`w-full min-h-screen bg-white flex flex-col items-center justify-center lg:px-6 px-2 py-10`}>
       {/* Heading */}
-      <h1 className="text-sm text-center text-[#5493d3] mt-10 tracking-widest">
+      <h1 className="text-sm text-center font-bold text-[#5493d3] mt-10 tracking-widest">
         WHY SAF?
       </h1>
 

@@ -19,7 +19,7 @@ function NavBar() {
                 {/* Right side links - hidden on large screens */}
                 <div className="hidden lg:flex space-x-14 items-center text-[15px]">
                   {/* CREATE IMPACT */}
-                   <div className="relative group flex items-center gap-2">
+                   <div className="relative group flex items-center gap-2 font-bold">
                     <a
                       href="/donate"
                       className="flex items-center gap-2 group hover:underline hover:decoration-blue-600 hover:decoration-2 underline-offset-4 tracking-widest"
@@ -33,7 +33,7 @@ function NavBar() {
                   </div>
 
                   {/* ABOUT US */}
-                  <div className="relative group flex items-center gap-2">
+                  <div className="relative group flex items-center gap-2 font-bold">
                     <a
                       href="/how-we-work"
                       className="flex items-center gap-2 group hover:underline hover:decoration-blue-600 hover:decoration-2 underline-offset-4 tracking-widest"
@@ -47,7 +47,7 @@ function NavBar() {
                   </div>
 
                   {/* WHY SAF? */}
-                  <div className="relative group flex items-center gap-2">
+                  <div className="relative group flex items-center gap-2 font-bold">
                     <a
                       href="why-saf"
                       className="flex items-center gap-2 group hover:underline hover:decoration-blue-600 hover:decoration-2 underline-offset-4 tracking-widest"

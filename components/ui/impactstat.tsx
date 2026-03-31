@@ -36,7 +36,7 @@ const ImpactStats: React.FC = () => {
         {stats.map((item, index) => (
           <div key={index} className="flex flex-col items-center text-center relative">
             {/* Value */}
-            <p className="text-4xl md:text-5xl font-extrabold mb-2">{item.value}</p>
+            <p className="text-3xl md:text-4xl font-bold mb-2">{item.value}</p>
 
             {/* Label with Icon */}
             <div className="flex items-center gap-2 text-lg">

@@ -16,8 +16,8 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-gray-700">
             {/* Logo and brief info */}
             <div className="lg:col-span-2">
-              <h2 className="text-gray-800 text-2xl font-bold mb-4">Sam Anisulowo Foundation</h2>
-              <p className="text-gray-600 font-bold text-sm mb-6">
+              <h2 className="text-gray-800 text-2xl font-normal mb-4">Sam Anisulowo Foundation</h2>
+              <p className="text-gray-600 font-normal text-sm mb-6">
                 Empowering lives and creating lasting change through impactful initiatives.
               </p>
               {/* Social Media Icons */}

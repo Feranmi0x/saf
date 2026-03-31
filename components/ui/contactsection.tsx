@@ -113,10 +113,10 @@ export default function ContactSection() {
             />
           </div>
           <div>
-            <h2 className="text-xl font-normal text-gray-800">
+            <h2 className="text-xl font-bold text-gray-800">
               Add Impact To your inbox
             </h2>
-            <p className="text-gray-800 font-bold mt-3 text-lg">
+            <p className="text-gray-800 font-normal mt-3 text-lg">
               Get our emails to stay in the know.
             </p>
           </div>
@@ -146,7 +146,7 @@ export default function ContactSection() {
                       name="firstName"
                       value={form.firstName}
                       onChange={handleChange}
-                      className="w-full border font-bold text-[17px] border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500"
+                      className="w-full border font-normal text-[17px] border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500"
                     />
                   </div>
 
@@ -159,7 +159,7 @@ export default function ContactSection() {
                       name="lastName"
                       value={form.lastName}
                       onChange={handleChange}
-                      className="w-full font-bold text-[17px] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500"
+                      className="w-full font-normal text-[17px] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500"
                     />
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export default function ContactSection() {
                     value={form.email}
                     onChange={handleChange}
                     required
-                    className="w-full font-bold text-[17px] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500"
+                    className="w-full font-normal text-[17px] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500"
                   />
                 </div>
 
@@ -191,7 +191,7 @@ export default function ContactSection() {
                         name="month"
                         value={form.month}
                         onChange={handleChange}
-                        className="appearance-none font-bold text-[17px] w-full border border-gray-300 rounded-tl-sm rounded-bl-sm px-2 py-2 pr-8 focus:outline-none focus:border-blue-500"
+                        className="appearance-none font-normal text-[17px] w-full border border-gray-300 rounded-tl-sm rounded-bl-sm px-2 py-2 pr-8 focus:outline-none focus:border-blue-500"
                       >
                         <option value="">MM</option>
                         {months.map((month) => (
@@ -208,7 +208,7 @@ export default function ContactSection() {
                         name="day"
                         value={form.day}
                         onChange={handleChange}
-                        className="appearance-none font-bold text-[17px] w-full border border-gray-300 px-2 py-2 pr-8 focus:outline-none focus:border-blue-500"
+                        className="appearance-none font-normal text-[17px] w-full border border-gray-300 px-2 py-2 pr-8 focus:outline-none focus:border-blue-500"
                       >
                         <option value="">DD</option>
                         {days.map((day) => (
@@ -225,7 +225,7 @@ export default function ContactSection() {
                         name="year"
                         value={form.year}
                         onChange={handleChange}
-                        className="appearance-none font-bold text-[17px] w-full border border-gray-300 rounded-tr-[4px] rounded-br-[4px] px-2 py-2 pr-8 focus:outline-none focus:border-blue-500"
+                        className="appearance-none font-normal text-[17px] w-full border border-gray-300 rounded-tr-[4px] rounded-br-[4px] px-2 py-2 pr-8 focus:outline-none focus:border-blue-500"
                       >
                         <option value="">YYYY</option>
                         {years.map((year) => (
@@ -257,7 +257,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`mt-[-10px] w-full text-[16px] ${
+                  className={`mt-[-10px] w-full text-[16px] font-bold ${
                     isSubmitting
                       ? "bg-blue-300 cursor-not-allowed"
                       : "bg-blue-500 hover:bg-blue-400"
@@ -280,7 +280,7 @@ export default function ContactSection() {
                 {status === "success" && (
                   <>
                     <h3 className="text-2xl font-normal text-blue-600 mb-3">Thank You!</h3>
-                    <p className="text-gray-700 font-bold text-[17px]">
+                    <p className="text-gray-700 font-normal text-[17px]">
                       You’ve successfully subscribed to updates from Sam Anisulowo Foundation.
                     </p>
                   </>
@@ -290,14 +290,14 @@ export default function ContactSection() {
                     <h3 className="text-2xl font-normal text-yellow-600 mb-3">
                       You’re Already Subscribed!
                     </h3>
-                    <p className="text-gray-700 font-bold">
+                    <p className="text-gray-700 font-normal">
                       Thank you for staying connected with Sam Anisulowo Foundation.
                     </p>
                   </>
                 )}
                 {status === "error" && (
                   <>
-                    <h3 className="text-2xl font-bold text-red-600 mb-3">Oops!</h3>
+                    <h3 className="text-2xl font-normal text-red-600 mb-3">Oops!</h3>
                     <p className="text-gray-700">Something went wrong. Please try again.</p>
                     <button
                       onClick={() => setStatus("idle")}
