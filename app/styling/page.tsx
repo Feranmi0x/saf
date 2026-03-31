@@ -1,4 +1,13 @@
-import { kazimir } from "../../lib/fonts";
+import localFont from "next/font/local";
+
+const kazimir = localFont({
+  src: [
+    { path: "../fonts/KazimirText-Regular.ttf", weight: "400", style: "normal" },
+    { path: "../fonts/kazimirtext-bold.ttf", weight: "700", style: "normal" },
+  ],
+  variable: "--font-kazimir",
+  display: "swap",
+});
 
 export default function Styling() {
   return (
