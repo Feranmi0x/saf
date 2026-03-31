@@ -61,7 +61,7 @@ function NavBar() {
               {/* Give Button */}
     <a
       href="/donate"
-      className="bg-blue-600 text-[15px] text-white px-2 py-2 rounded hover:bg-blue-500 transition tracking-widest h-[34px] flex items-center justify-center gap-2"
+      className="bg-blue-600 text-[15px] font-bold text-white px-2 py-2 rounded hover:bg-blue-500 transition tracking-widest h-[34px] flex items-center justify-center gap-2"
     >
       <FaCoins className="text-white text-[14px]" />
       GIVE

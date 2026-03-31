@@ -20,16 +20,16 @@ export default function CleanImpact() {
       {/* Text Section */}
       <div className="mt-[80px] lg:mt-[10px] mb-[40px] w-full lg:w-1/2 flex flex-col justify-center text-left text-gray-800 ">
         <h2
-          className={`${kazimir.className} lg:text-left text-center text-[35px] md:text-[38px] lg:text-[42px] leading-tight mb-5`}
+          className={`${kazimir.className} lg:text-left text-center text-[35px] md:text-[38px] lg:text-[42px] font-bold leading-tight mb-5`}
         >
           Sam Anisulowo Foundation
         </h2>
 
-        <p className="text-[18px] lg:text-left leading-tight font-bold text-center mb-4">
+        <p className="text-[18px] lg:text-left leading-tight font-normal text-center mb-4">
           Founded in 2018 by Samuel Anisulowo, the foundation exists to help as many people as possible, with a primary focus on communities in Ekiti State — especially Irepodun/Ifelodun local government.
         </p>
 
-        <p className="text-[18px] lg:text-left leading-tight font-bold text-center">
+        <p className="text-[18px] lg:text-left leading-tight font-normal text-center">
           This area is marked by deep poverty where many cannot afford daily needs and sending children to school is a challenge. With support from friends and family, the foundation has empowered numerous families — improving access to education, livelihoods, and essential support.
         </p>
       </div>

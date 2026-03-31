@@ -57,10 +57,10 @@ export default function SubscribeSectionInline() {
         {!isSubmitted ? (
           <>
             <div className="text-center mb-4 fade-in">
-              <h2 className="text-[17px] font-normal text-gray-600 leading-tight">
+              <h2 className="text-[17px] font-bold text-gray-600 leading-tight">
                 Add Impact To Your Inbox
               </h2>
-              <p className="text-gray-800 font-bold mt-1 leading-tight mb-[30px]">
+              <p className="text-gray-800 font-normal mt-1 leading-tight mb-[30px]">
                 Get our emails to stay in the know.
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function SubscribeSectionInline() {
                   onChange={handleChange}
                   placeholder="First name"
                   required
-                  className="font-bold bg-white/60 w-full lg:w-1/4 border border-gray-300 px-3 py-3 text-sm focus:outline-none focus:border-[#003366] text-gray-700 rounded-none lg:rounded-l text-[18px]"
+                  className="font-normal bg-white/60 w-full lg:w-1/4 border border-gray-300 px-3 py-3 text-sm focus:outline-none focus:border-[#003366] text-gray-700 rounded-none lg:rounded-l text-[18px]"
                 />
 
                 <input
@@ -84,7 +84,7 @@ export default function SubscribeSectionInline() {
                   onChange={handleChange}
                   placeholder="Last name"
                   required
-                  className="font-bold bg-white/60 w-full lg:w-1/4 border border-gray-300 px-3 py-3 text-sm focus:outline-none focus:border-[#003366] text-gray-700 rounded-none border-t text-[18px]"
+                  className="font-normal bg-white/60 w-full lg:w-1/4 border border-gray-300 px-3 py-3 text-sm focus:outline-none focus:border-[#003366] text-gray-700 rounded-none border-t text-[18px]"
                 />
 
                 <input
@@ -95,23 +95,23 @@ export default function SubscribeSectionInline() {
                   onChange={handleChange}
                   placeholder="Email"
                   required
-                  className="font-bold bg-white/60 w-full lg:w-1/3 border border-gray-300 px-3 py-3 text-sm focus:outline-none focus:border-[#003366] text-gray-700 rounded-none border-t text-[18px]"
+                  className="font-normal bg-white/60 w-full lg:w-1/3 border border-gray-300 px-3 py-3 text-sm focus:outline-none focus:border-[#003366] text-gray-700 rounded-none border-t text-[18px]"
                 />
 
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-[#003366] hover:bg-[#003366e3] text-white text-sm font-normal px-4 tracking-widest rounded-none lg:rounded-r w-full lg:w-auto py-3"
+                  className="bg-[#003366] hover:bg-[#003366e3] text-white text-sm font-bold px-4 tracking-widest rounded-none lg:rounded-r w-full lg:w-auto py-3"
                 >
                   {loading ? "Submitting..." : "SUBSCRIBE"}
                 </button>
               </div>
 
-              <p className="text-xs text-gray-900 font-bold text-center mt-4">
+              <p className="text-xs text-gray-900 font-normal text-center mt-4">
                 By clicking Subscribe, you&apos;re submitting your information to Sam
                 Anisulowo Foundation.
               </p>
-              <p className="text-xs text-gray-500 font-bold text-center mt-3">
+              <p className="text-xs text-gray-500 font-normal text-center mt-3">
                 This site is protected by reCAPTCHA and the Google{" "}
                 <a
                   href="https://policies.google.com/privacy"
@@ -138,7 +138,7 @@ export default function SubscribeSectionInline() {
             <h2 className="text-2xl font-normal text-[#003366] mb-4">
               Thank You for Subscribing!
             </h2>
-            <p className="text-gray-700 text-lg font-bold">
+            <p className="text-gray-700 text-lg font-normal">
               Welcome to our community, {form.firstName}! 🎉  
               You’ll start receiving updates from us soon.
             </p>

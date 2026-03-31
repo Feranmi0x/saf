@@ -28,7 +28,7 @@ export default function TheSpringSection() {
             <span className="transform -rotate-90 origin-center text-[18px] mb-[-12px] font-normal ">H</span>
             <span className="transform -rotate-90 origin-center text-[18px]  font-normal ">T</span>
           </div>
-          <span className="text-[42px] font-normal tracking-widest border-b-[10px] border-dotted border-gray-800 leading-[0.8] pb-1">
+          <span className="text-[42px] font-bold tracking-widest border-b-[10px] border-dotted border-gray-800 leading-[0.8] pb-1">
            TRANSFORM
         </span>
         </div>
@@ -39,7 +39,7 @@ export default function TheSpringSection() {
         </h2>
 
         {/* Description */}
-        <p className="max-w-[70ch] lg:text-[18px] text-[18px] leading-tight font-bold text-gray-900 mt-[17px]">
+        <p className="max-w-[70ch] lg:text-[18px] text-[18px] leading-tight font-normal text-gray-900 mt-[17px]">
           When you give to the Sam Anisulowo Foundation, your support directly funds programs that uplift families in Ekiti State. Founded in 2018 by Samuel Anisulowo, we focus on areas like Irepodun/Ifelodun Local Government where poverty prevents many from meeting daily needs and sending children to school.
         </p>
       </div>
@@ -58,7 +58,7 @@ export default function TheSpringSection() {
           </div>
 
           {/* Text */}
-          <p className="max-w-[50ch] mx-auto text-[18px] leading-tight font-semibold text-gray-700 text-center lg:text-left">
+          <p className="max-w-[50ch] mx-auto text-[18px] leading-tight font-normal text-gray-700 text-center lg:text-left">
             Our programs are locally-led and community-owned. We deploy support to the field where trusted partners
             deliver education sponsorships, vocational training, and small grants that directly benefit families in need.
           </p>
@@ -77,7 +77,7 @@ export default function TheSpringSection() {
           </div>
 
           {/* Text */}
-          <p className="max-w-[50ch] mx-auto text-[18px] leading-tight font-semibold text-gray-900 text-center lg:text-left">
+          <p className="max-w-[50ch] mx-auto text-[18px] leading-tight font-normal text-gray-900 text-center lg:text-left">
           Essential to this work. We count on monthly gifts to fill in any funding gaps that may arise or
             account for potential changes in program timelines. The Spring enables us to fund our local partners with
             confidence and make long-term investments in rural communities.

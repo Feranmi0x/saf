@@ -36,10 +36,10 @@ export default function LocalPartners() {
       <div className="relative flex flex-col lg:flex-row justify-center items-center">
         {/* Mobile View: Text on top */}
         <div className="lg:hidden w-full h-[40vh] bg-white p-8 rounded-t-lg  shadow-lg flex flex-col justify-center">
-          <h2 className={`${kazimir.className} text-[28px] md:text-[28px] font-normal mb-4 text-center`}>
+          <h2 className={`${kazimir.className} text-[28px] font-normal mb-4 text-center`}>
             Local Partners
           </h2>
-          <p className="text-[18px] font-bold text-center leading-tight text-gray-700">
+          <p className="text-[18px] font-normal text-center leading-tight text-gray-700">
             Our carefully-chosen local partners have a community-centered
             approach, excellent reporting practices, and years of experience
             implementing effective, sustainable community programs in their area.
@@ -58,8 +58,8 @@ export default function LocalPartners() {
 
         {/* Desktop Overlapping Text Box */}
         <div className="hidden lg:block absolute left-[5%] top-[20%] bg-white p-8 rounded-lg shadow-lg w-[45vw] h-[40vh] z-10">
-          <h2 className={`${kazimir.className} text-[45px] pt-[8%] font-normal mb-4 text-center`}>Local Partners</h2>
-          <p className="text-center text-[18px] leading-tight text-gray-700 px-[10%] font-bold">
+          <h2 className={`${kazimir.className} text-[45px] pt-[8%] font-bold mb-4 text-center`}>Local Partners</h2>
+          <p className="text-center text-[18px] leading-tight text-gray-700 px-[10%] font-normal">
             Our local partners are trusted community organizations and leaders
             in Ekiti State. Together we design and implement programs that aim
             to improve education, livelihoods, and wellbeing in Irepodun/Ifelodun
@@ -72,10 +72,10 @@ export default function LocalPartners() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 mt-24">
         {faqs.map((faq, index) => (
           <div key={index}>
-            <h3 className="text-[22px] font-normal mb-3 text-gray-900 text-center lg:text-left">
+            <h3 className="text-[22px] font-bold mb-3 text-gray-900 text-center lg:text-left">
               {faq.title}
             </h3>
-            <p className="text-[18px] font-bold leading-tight text-gray-700 text-center lg:text-left">
+            <p className="text-[18px] font-normal leading-tight text-gray-700 text-center lg:text-left">
               {faq.description}
             </p>
           </div>

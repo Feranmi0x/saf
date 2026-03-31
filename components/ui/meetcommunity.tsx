@@ -21,11 +21,11 @@ export default function MeetCommunity() {
       {/* Header Text */}
       <div className="max-w-3xl mb-16">
         <h2
-          className={`${kazimir.className} text-[34px] md:text-[38px] lg:text-[44px] font-normal text-gray-900 leading-tight mb-5`}
+          className={`${kazimir.className} text-[34px] md:text-[38px]  font-bold text-gray-900 leading-tight mb-5`}
         >
           Meet the community changing lives
         </h2>
-        <p className="text-[18px] text-gray-700 font-semibold leading-tight mb-12">
+        <p className="text-[18px] text-gray-700 font-normal leading-tight mb-12">
     The Sam Anisulowo Foundation was established in 2018 by Samuel Olawale Anisulowo, who has been supporting families in Nigeria and across Africa with the help of family and friends. The foundation has empowered many by improving educational status, providing healthcare support, and enhancing livelihoods. We also offer farming aids to local farmers and provide basic necessities to the poor, widows, widowers, and orphanage homes.
         </p>
       </div>
@@ -73,12 +73,12 @@ export default function MeetCommunity() {
             </div>
 
             {/* Quote */}
-            <p className="lg:text-[17px] text-[16px] text-gray-900 mb-4 leading-tight font-bold mt-[-8px]">
+            <p className="lg:text-[17px] text-[16px] text-gray-900 mb-4 leading-tight font-normal mt-[-8px]">
               “{person.quote}”
             </p>
 
             {/* Name */}
-            <h3 className="text-gray-700 text-[15px] font-normal uppercase tracking-widest mb-8 mt-6">{person.name}</h3>
+            <h3 className="text-gray-700 text-[15px] font-bold uppercase tracking-widest mb-8 mt-6">{person.name}</h3>
           </div>
         ))}
       </div>

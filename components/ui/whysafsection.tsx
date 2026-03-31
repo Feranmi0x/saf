@@ -50,7 +50,7 @@ export default function WhySafSection() {
     <div className="absolute top-4 left-1/2 -translate-x-1/2 flex gap-4 text-sm">
       <button
         onClick={() => setSelectedImage("elders")}
-        className={`py-2 px-4 rounded ${
+        className={`py-2 px-4 rounded font-bold ${
           selectedImage === "elders"
             ? "bg-blue-500 text-white"
             : "bg-gray-200 text-gray-700"
@@ -60,7 +60,7 @@ export default function WhySafSection() {
       </button>
       <button
         onClick={() => setSelectedImage("students")}
-        className={`py-2 px-4 rounded  ${
+        className={`py-2 px-4 rounded font-bold ${
           selectedImage === "students"
             ? "bg-blue-500 text-white"
             : "bg-gray-200 text-gray-700"

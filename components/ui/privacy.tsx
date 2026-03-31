@@ -24,9 +24,9 @@ export default function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
         className="bg-white p-6 rounded shadow max-w-lg max-h-[80vh] overflow-y-auto relative"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="text-xl font-normal text-gray-600 tracking-widest mb-3">Privacy Policy</h2>
+        <h2 className="text-xl font-bold text-gray-600 tracking-widest mb-3">Privacy Policy</h2>
 
-        <p className="mb-6 text-gray-700 tracking-widest  font-bold text-sm">
+        <p className="mb-6 text-gray-700 tracking-widest  font-normal text-sm">
           Sam Anisulowo Foundation respects your privacy and is committed to protecting any
           information you share with us. We may collect basic information such as your name,
           email address, phone number, or details you provide when contacting us, volunteering,
@@ -36,9 +36,9 @@ export default function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
           obligations. By using this website, you agree to this policy.
         </p>
 
-        <h2 className="text-xl font-normal tracking-widest text-gray-600 mb-3">Terms of Service</h2>
+        <h2 className="text-xl font-bold tracking-widest text-gray-600 mb-3">Terms of Service</h2>
 
-        <p className="text-gray-700 tracking-widest text-sm font-bold">
+        <p className="text-gray-700 tracking-widest text-sm font-normal">
           By accessing this website, you agree to use it only for lawful purposes and in a way
           that does not harm the foundation or other users. All content on this website is for
           informational purposes and may be updated without notice. The Sam Anisulowo Foundation

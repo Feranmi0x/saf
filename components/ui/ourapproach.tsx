@@ -36,10 +36,10 @@ export default function OurApproach() {
     <section className="w-full min-h-[80vh] bg-[#f8eed300] flex flex-col justify-center items-center py-16 px-6">
       {/* Header Section */}
       <div className="max-w-3xl text-center mb-12">
-        <h2 className={`${kazimir.className} text-[26px] md:text-3xl font-normal text-gray-900 mb-4`}>
+        <h2 className={`${kazimir.className} text-[26px] md:text-3xl font-bold text-gray-900 mb-4`}>
           Our Approach
         </h2>
-        <p className="text-base md:text-lg font-bold text-gray-700 leading-tight mb-4">
+        <p className="text-base md:text-lg font-normal text-gray-700 leading-tight mb-4">
           We partner with trusted local organizations to support community-led
           programs in education, livelihoods, and health across Ekiti State. Our work
           extends beyond initial activities — we invest in monitoring, evaluation,
@@ -62,17 +62,17 @@ export default function OurApproach() {
             className="flex flex-col items-center text-center px-4 md:px-6"
           >
             {/* Number Circle */}
-            <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-800 bg-blue-500 text-white text-lg font-normal mb-4">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-800 bg-blue-500 text-white text-lg font-bold mb-4">
               {step.number}
             </div>
 
             {/* Title */}
-            <h3 className="text-[18px] font-normal text-gray-900 mb-3">
+            <h3 className="text-[18px] font-bold text-gray-900 mb-3">
               {step.title}
             </h3>
 
             {/* Description */}
-            <p className="text-gray-700 font-bold leading-tight text-[15px]">
+            <p className="text-gray-700 font-normal leading-tight text-[15px]">
               {step.description}
             </p>
           </div>

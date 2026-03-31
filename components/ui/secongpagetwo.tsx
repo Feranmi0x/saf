@@ -60,7 +60,7 @@ export default function ImpactGrid() {
   >
     Sam Anisulowo Foundation <br /> changes lives.
   </h3>
-  <p className="font-bold text-center mb-[80px] mt-[20px] leading-tight lg:text-[18px] text-gray-800">
+  <p className="font-normal text-center mb-[80px] mt-[20px] leading-tight lg:text-[18px] text-gray-800">
     Our work focuses on education, livelihoods, and wellbeing — <br />especially for women and children in Ekiti State.
   </p>
 </div>
@@ -81,20 +81,20 @@ export default function ImpactGrid() {
                   <div className="absolute inset-0 bg-black/30"></div>
 
                   {/* Desktop Title */}
-                  <div className="hidden md:block absolute bottom-0 w-full text-center text-white bg-blue-400 py-2 text-[16px] font-normal tracking-widest uppercase">
+                  <div className="hidden md:block absolute bottom-0 w-full text-center text-white bg-blue-400 py-2 text-[16px] font-bold tracking-widest uppercase">
                     {card.title}
                   </div>
                 </div>
 
                 {/* Desktop Hover Description */}
                 <div className="hidden md:flex absolute inset-0 flex-col justify-center items-center text-center px-6 text-black opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 bg-white">
-                  <p className="text-[14px] uppercase text-[#5493d3] font-normal mb-2 tracking-widest text-center">
+                  <p className="text-[14px] uppercase text-[#5493d3] font-bold mb-2 tracking-widest text-center">
                     {card.title}
                   </p>
                   <p className="text-[16px] leading-tight max-w-[55ch] whitespace-pre-line text-center mx-auto mb-[20px]">
                     {card.description}
                   </p>
-                  <p className="text-[16px] font-bold leading-tight max-w-[65ch] text-center mb-[40px]">
+                  <p className="text-[16px] font-normal leading-tight max-w-[65ch] text-center mb-[40px]">
                     {card.description2}
                   </p>
                 </div>
@@ -103,13 +103,13 @@ export default function ImpactGrid() {
 
             {/* ===== Mobile Description (below image, plain background) ===== */}
             <div className="md:hidden mt-4 text-gray-800 text-center">
-              <p className="text-[14px] uppercase text-[#5493d3] font-normal mb-2 tracking-widest">
+              <p className="text-[14px] uppercase text-[#5493d3] font-bold mb-2 tracking-widest">
                 {card.title}
               </p>
               <p className="text-[16px] leading-tight max-w-[55ch] whitespace-pre-line mx-auto mb-[20px]">
                 {card.description}
               </p>
-              <p className="text-[16px] font-bold leading-tight max-w-[65ch] mx-auto mb-[40px]">
+              <p className="text-[16px] font-normal leading-tight max-w-[65ch] mx-auto mb-[40px]">
                 {card.description2}
               </p>
             </div>

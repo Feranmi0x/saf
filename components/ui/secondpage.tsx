@@ -34,7 +34,7 @@ export default function SecondPage() {
         {/* Overlay Text on Mobile */}
         <div className="absolute inset-0 flex justify-center items-center px-6">
           <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 w-[90%] h-[65%] flex flex-col justify-center text-center shadow-xl">
-            <h1 className="tracking-widest text-[14px] md:text-[16px] font-normal mb-4 text-[#5493d3]">
+            <h1 className="tracking-widest text-[14px] md:text-[16px] font-bold mb-4 text-[#5493d3]">
               WHY SAF?
             </h1>
 
@@ -51,7 +51,7 @@ export default function SecondPage() {
               Irepodun/Ifelodun local government.
             </p>
 
-            <p className="text-[16px] leading-tight mb-5 font-semibold text-gray-800">
+            <p className="text-[16px] leading-tight mb-5 text-gray-800">
               This is an area where poverty persists: many cannot afford daily
               needs and sending children to school is a struggle. With help from
               friends and family, the foundation has empowered many people —
@@ -59,7 +59,7 @@ export default function SecondPage() {
               assistance to families in need.
             </p>
 
-            <button className="bg-blue-500 hover:bg-blue-400 text-white font-normal px-6 py-3 rounded-md transition tracking-widest mx-auto">
+            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold px-6 py-3 rounded-md transition tracking-widest mx-auto">
               LEARN MORE
             </button>
           </div>
@@ -69,7 +69,7 @@ export default function SecondPage() {
       {/* ===== DESKTOP VIEW (Side-by-Side Style) ===== */}
       <div className="hidden lg:flex flex-1 flex-col justify-center items-start px-16 py-10 bg-white/80 backdrop-blur-sm z-10">
         <div className="max-w-2xl">
-          <h1 className="tracking-widest text-[16px] font-normal mb-4 text-[#5493d3]">
+          <h1 className="tracking-widest text-[16px] font-bold mb-4 text-[#5493d3]">
             WHY SAF?
           </h1>
 
@@ -86,7 +86,7 @@ export default function SecondPage() {
             Irepodun/Ifelodun local government.
           </p>
 
-          <p className="text-base leading-relaxed mb-5 font-bold">
+          <p className="text-base leading-relaxed mb-5 font-normal">
             This is an area where poverty persists: many cannot afford daily
             needs and sending children to school is a struggle. With help from
             friends and family, the foundation has empowered many people —
@@ -94,7 +94,7 @@ export default function SecondPage() {
             assistance to families in need.
           </p>
           <Link href="/articles/how-we-help-communities">
-            <button className="bg-blue-500 hover:bg-blue-400 text-white font-normal px-6 py-3 rounded-md transition tracking-widest">
+            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold px-6 py-3 rounded-md transition tracking-widest">
             LEARN MORE
             </button>
            </Link>

@@ -21,7 +21,7 @@ export default function HowWeWorkHero() {
           How We Work
         </h2>
 
-        <p className="font-bold md:text-lg text-gray-700 leading-tight">
+        <p className="font-normal md:text-lg text-gray-700 leading-tight">
           Many families in Ekiti State live in rural communities with limited
           access to basic services. From the start, the Sam Anisulowo
           Foundation has focused on partnering with trusted local

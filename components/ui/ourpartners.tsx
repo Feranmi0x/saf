@@ -88,15 +88,15 @@ export default function SolutionsSection() {
 
         {/* Text (above video on mobile, right on lg) */}
         <div className="flex-1 flex flex-col justify-center items-start px-8 py-10 bg-gray-900 order-1 lg:order-2">
-          <h2 className={`${kazimir.className} text-[26px] md:text-[26px] font-normal text-white mb-4`}>
+          <h2 className={`${kazimir.className} text-[26px] md:text-[26px] font-bold text-white mb-4`}>
             We’re community-focused
           </h2>
-          <p className="text-white font-bold text-[16px] leading-tight mb-6 max-w-lg">
+          <p className="text-white font-normal text-[16px] leading-tight mb-6 max-w-lg">
             Our partners take existing community resources, geography, and population into account when choosing the best programs. From education sponsorships and skills training to small grants and food assistance, we work to fund the most appropriate support for each community — with a priority on Ekiti State and the Irepodun/Ifelodun local government where poverty prevents many families from meeting daily needs and sending children to school.
           </p>
           <a
             href="#"
-            className="relative inline-block text-white uppercase tracking-widest text-[14px] font-medium transition before:content-[''] before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[2px] before:bg-blue-500 hover:before:bg-blue-400"
+            className="relative inline-block text-white uppercase tracking-widest text-[14px] font-bold transition before:content-[''] before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[2px] before:bg-blue-500 hover:before:bg-blue-400"
           >
             Learn more
           </a>
@@ -120,10 +120,10 @@ export default function SolutionsSection() {
 
       {/* Text */}
       <div>
-        <h3 className="text-[20px] font-normal text-gray-800 mb-4">
+        <h3 className="text-[20px] font-bold text-gray-800 mb-4">
           {item.title}
         </h3>
-        <p className="text-[17px] font-bold text-gray-800 leading-tight">
+        <p className="text-[17px] font-normal text-gray-800 leading-tight">
           {item.description}
         </p>
       </div>

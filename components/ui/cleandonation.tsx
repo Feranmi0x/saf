@@ -29,7 +29,7 @@ export default function Donation() {
           {[10000, 20000, 50000].map((amt) => (
             <button
               key={amt}
-              className={`w-[30%] px-2 py-2 rounded font-semibold transition border ${
+              className={`w-[30%] px-2 py-2 rounded font-normal transition border ${
                 amount === amt
                   ? "bg-blue-600 text-white border-blue-600"
                   : "bg-gray-100 text-gray-700 border-gray-300"
@@ -44,7 +44,7 @@ export default function Donation() {
         {/* Bottom Row: 100k + Other */}
         <div className="flex justify-between gap-2 mb-4">
           <button
-            className={`w-[30%] px-2 py-2 rounded font-semibold transition border ${
+            className={`w-[30%] px-2 py-2 rounded font-normal transition border ${
               amount === 100000
                 ? "bg-blue-600 text-white border-blue-600"
                 : "bg-gray-100 text-gray-700 border-gray-300"
@@ -58,7 +58,7 @@ export default function Donation() {
             <input
               type="text"
               placeholder="₦"
-              className="w-[67%] px-4 py-2 font-bold text-gray-700 rounded border border-gray-300 focus:outline-none focus:border-blue-500"
+              className="w-[67%] px-4 py-2 font-normal text-gray-700 rounded border border-gray-300 focus:outline-none focus:border-blue-500"
               value={
                 otherAmount
                   ? `₦${Number(otherAmount.replace(/\D/g, "") || "0").toLocaleString()}`
@@ -71,7 +71,7 @@ export default function Donation() {
             />
           ) : (
             <button
-              className={`w-[67%] px-4 py-2 font-bold text-gray-700 rounded transition border ${
+              className={`w-[67%] px-4 py-2 font-normal text-gray-700 rounded transition border ${
                 amount === "Other"
                   ? "bg-blue-600 text-white border-blue-600"
                   : "bg-gray-100 text-gray-700 border-gray-300"
@@ -85,7 +85,7 @@ export default function Donation() {
 
         {/* Join Button */}
         <button
-          className="w-full bg-green-600 text-white py-3 rounded font-normal text-[14px] hover:bg-green-500 transition mb-2 tracking-widest"
+          className="w-full bg-green-600 text-white py-3 rounded font-bold text-[14px] hover:bg-green-500 transition mb-2 tracking-widest"
           onClick={() => setShowForm(true)}
         >
           JOIN TODAY
@@ -93,7 +93,7 @@ export default function Donation() {
 
         <hr className="border-t-2 border-dotted border-gray-300 my-3" />
 
-        <p className="text-[14px] font-semibold text-gray-900 text-center">
+        <p className="text-[14px] font-normal text-gray-900 text-center">
           Your{" "}
           {amount === "Other"
             ? `₦${Number(otherAmount.replace(/\D/g, "") || "0").toLocaleString()}`
