@@ -4,14 +4,6 @@ import localfont from "next/font/local";
 
 // ... other imports
 
-const kazimir = localfont({
-  src: [
-    { path: "./fonts/KazimirText-Regular.ttf", weight: "400", style: "normal" },
-    { path: "./fonts/kazimirtext-bold.ttf", weight: "700", style: "normal" },
-  ],
-  variable: "--font-kazimir",
-  display: "swap",
-});
 
 const fontspring = localfont({
   src: [

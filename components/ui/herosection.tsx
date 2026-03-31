@@ -56,7 +56,7 @@ export default function HeroSection() {
       {!showDonation && (
         <div className="absolute inset-0 flex flex-col items-center lg:items-start px-4">
           <h1
-            className={`${kazimir.className} text-white text-[34px] p-[5%] lg:text-[32px] font-bold text-center max-w-[22ch] lg:max-w-[28ch] mt-[80%] md:mt-[30%] lg:mt-[3.5%] lg:ml-[4%] leading-tight`}
+            className={`${kazimir.className} text-white text-[34px] p-[5%] lg:text-[32px] font-normal text-center max-w-[22ch] lg:max-w-[28ch] mt-[80%] md:mt-[30%] lg:mt-[3.5%] lg:ml-[4%] leading-tight`}
           >
             Join us in changing lives one child, one elder together.
           </h1>
@@ -65,7 +65,7 @@ export default function HeroSection() {
           <div className="w-full lg:max-w-md mt-[-2%] lg:ml-[10%] flex flex-col items-center lg:items-start">
             <button
               onClick={() => setShowDonation(true)}
-              className="lg:hidden bg-blue-600 text-white font-normal py-2 px-4 rounded mt-4 tracking-widest"
+              className="lg:hidden bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4 tracking-widest"
             >
               GIVE TODAY
             </button>

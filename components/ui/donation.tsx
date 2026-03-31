@@ -35,7 +35,7 @@ export default function Donation() {
       {/* Frequency */}
       <div className="flex mb-4 max-w-[400px] w-full">
         <button
-          className={`px-4 py-2 w-1/2 rounded-l text-[14px] tracking-wide transition ${
+          className={`px-4 py-2 w-1/2 rounded-l text-[14px] font-bold tracking-wide transition ${
             frequency === "once" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700"
           }`}
           onClick={() => setFrequency("once")}
@@ -43,7 +43,7 @@ export default function Donation() {
           GIVE ONCE
         </button>
         <button
-          className={`px-4 py-2 w-1/2 rounded-r text-[14px] tracking-wide transition ${
+          className={`px-4 py-2 w-1/2 rounded-r text-[14px] tracking-wide transition font-bold ${
             frequency === "monthly" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700"
           }`}
           onClick={() => setFrequency("monthly")}
@@ -61,7 +61,7 @@ export default function Donation() {
           {[10000, 20000, 50000].map((amt) => (
             <button
               key={amt}
-              className={`px-2 py-2 w-[30%] rounded font-semibold transition border ${
+              className={`px-2 py-2 w-[30%] rounded font-seminormal transition border ${
                 amount === amt
                   ? "bg-blue-600 text-white border-blue-600"
                   : "bg-gray-100 text-gray-700 border-gray-300"
@@ -74,7 +74,7 @@ export default function Donation() {
 
           <div className="flex gap-4 w-full justify-center">
             <button
-              className={`px-2 py-2 w-[30%] rounded font-semibold transition border ${
+              className={`px-2 py-2 w-[30%] rounded font-seminormal transition border ${
                 amount === 100000
                   ? "bg-blue-600 text-white border-blue-600"
                   : "bg-gray-100 text-gray-700 border-gray-300"
@@ -88,7 +88,7 @@ export default function Donation() {
   <input
     type="text"
     placeholder={frequency === "monthly" ? "₦ /mo" : "₦"}
-    className="px-4 py-2 w-[65%] font-bold text-gray-700 rounded border border-gray-300 focus:outline-none focus:border-blue-500"
+    className="px-4 py-2 w-[65%] font-normal text-gray-700 rounded border border-gray-300 focus:outline-none focus:border-blue-500"
     value={otherAmount ? `₦${Number(otherAmount.replace(/\D/g, "") || "0").toLocaleString()}` : ""}
     onChange={(e) => {
       const raw = e.target.value.replace(/\D/g, ""); // remove non-digits
@@ -97,7 +97,7 @@ export default function Donation() {
   />
 ) : (
   <button
-    className={`px-4 py-2 w-[65%] font-bold text-gray-700 rounded transition border ${
+    className={`px-4 py-2 w-[65%] font-normal text-gray-700 rounded transition border ${
       amount === "Other"
         ? "bg-blue-600 text-white border-blue-600"
         : "bg-gray-100 text-gray-700 border-gray-300"
@@ -109,7 +109,7 @@ export default function Donation() {
 )}          </div>
 
           <button
-            className={`px-4 py-2 w-full mt-4 rounded font-semibold transition border ${
+            className={`px-4 py-2 w-full mt-4 rounded font-seminormal transition border ${
               amount === "Sponsor"
                 ? "bg-blue-600 text-white border-blue-600"
                 : "bg-gray-100 text-gray-700 border-gray-300"
@@ -122,7 +122,7 @@ export default function Donation() {
 
         {/* Join Today Button */}
         <button
-          className="w-full bg-green-600 text-white py-3 rounded font-normal text-[14px] hover:bg-green-500 transition mb-2 tracking-widest"
+          className="w-full bg-green-600 text-white py-3 rounded font-bold text-[14px] hover:bg-green-500 transition mb-2 tracking-widest"
           onClick={() => setShowForm(true)}
         >
           JOIN TODAY
@@ -130,7 +130,7 @@ export default function Donation() {
 
         <hr className="border-t-2 border-dotted border-gray-300 my-2" />
 
-       <p className="text-[14px] font-bold text-gray-900 text-left mb-4 mt-6">
+       <p className="text-[14px] font-normal text-gray-900 text-left mb-4 mt-6">
   Your{" "}
   {amount === "Other"
     ? `₦${Number(otherAmount.replace(/\D/g, "") || "0").toLocaleString()}`
@@ -152,7 +152,7 @@ export default function Donation() {
 </p>
       </div>
 
-<div className="flex font-bold justify-center lg:text-white text-[12px] mt-2 w-full leading-tight">
+<div className="flex font-normal justify-center lg:text-white text-[12px] mt-2 w-full leading-tight">
   <p className="">
     <span className="flex items-center gap-1">
       <FiLock className="text-gray-500 lg:text-white" />

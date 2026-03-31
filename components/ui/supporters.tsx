@@ -5,7 +5,7 @@ import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
 const kazimir = localFont({
   src: [
-    { path: "../../app/fonts/fonnts.com-Kazimir-Text-Medium.otf", weight: "400", style: "normal" },
+    { path: "../../app/fonts/fonnts.com-Kazimir-Text-Medium.otf", weight: "400", style: "bold" },
   ],
   variable: "--font-kazimir",
   display: "swap",
@@ -51,9 +51,9 @@ const supporters: Supporter[] = [
   },
   {
     id: 6,
-    name: "Emma Wilson",
-    contribution: "₦5,000",
-    image: "/supporters/emma.jpg",
+    name: "Dudulewa Labake",
+    contribution: "Voluntery Supporter",
+    image: "/labake.jpg",
   },
 ];
 
@@ -75,8 +75,8 @@ const SupportersPage: React.FC = () => {
       <h1 className={`${kazimir.className} text-3xl text-gray-700 mb-6 mt-[80px] text-center`}>
         Our Amazing Supporters
       </h1>
-      <p className="text-md font-bold text-gray-700 max-w-md text-center mb-[40px]">
-        There are lots of great ways to support the Sam Anisulowo Foundation and uplift families in Ekiti State.<span className="text-gray-800 font-normal ">Take action today, and change lives.</span>
+      <p className="text-md font-normal text-gray-700 max-w-md text-center mb-[40px]">
+        There are lots of great ways to support the Sam Anisulowo Foundation and uplift families in Ekiti State.<span className="text-gray-800 font-bold ">Take action today, and change lives.</span>
       </p>
 
       {/* Scrollable Horizontal Supporters List */}
@@ -104,7 +104,7 @@ const SupportersPage: React.FC = () => {
               {/* Text Overlay */}
               <div className="bg-black/60 rounded-sm absolute bottom-5 left-3 right-3 text-center p-2">
                 <h3 className="font-bold text-lg text-white uppercase">{supporter.name}</h3>
-                <p className="text-[#5493d3] font-semibold">
+                <p className="text-[#5493d3] font-bold">
                   {supporter.contribution}
                 </p>
               </div>

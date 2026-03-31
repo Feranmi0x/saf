@@ -13,9 +13,9 @@ const ImpactStats: React.FC = () => {
       tooltip: "These are projects directly supported by our foundation.",
     },
     {
-      value: "29",
-      label: "States",
-      tooltip: "Currently operating in 29 states across Nigeria.",
+      value: "16",
+      label: "LGAs served",
+      tooltip: "Currently operating in 16 LGAs across Nigeria.",
     },
     {
       value: "1,000,000",

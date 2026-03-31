@@ -28,11 +28,11 @@ const ThankYouCard: React.FC = () => {
           />
         </svg>
         {/* Text inside the circle */}
-        <span className="text-4xl lg:text-2xl font-bold absolute">100%</span>
+        <span className="text-4xl lg:text-2xl font-normal absolute">100%</span>
       </div>
 
       {/* Heading */}
-      <p className="text-xl font-bold text-white text-center lg:text-left max-w-[600px] leading-snug">
+      <p className="text-xl font-normal text-white text-center lg:text-left max-w-[600px] leading-snug">
         Thanks to generous private donors who fund our operational expenses, 100% of your donation directly funds Sam Anisulowo foundation projects.
       </p>
     </div>
